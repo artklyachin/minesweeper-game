@@ -1,6 +1,6 @@
 import pygame
 from src.static import config
-from src import Game
+from src import game
 
 print(1)
 pygame.init()
@@ -10,7 +10,7 @@ screen = pygame.display.set_mode([500, 500])
 
 # Run until the user asks to quit
 clock = pygame.time.Clock()
-game = Game.Game(screen)
+game = game.Game(screen)
 running = True
 while running:
 
@@ -24,18 +24,18 @@ while running:
             if event.button == 1:
                 game.handle_left_mouse_click(event.pos)
                 for i in range(game.map.map_hight):
-                    print(game.map.omap[i])
+                    print(game.map.object_map[i])
                 print()
                 for i in range(game.map.map_hight):
-                    print(game.map.tmap[i])
+                    print(game.map.territoris_map[i])
                 print("---")
             elif event.button == 3:
                 game.handle_right_mouse_click(event.pos)
                 for i in range(game.map.map_hight):
-                    print(game.map.omap[i])
+                    print(game.map.object_map[i])
                 print()
                 for i in range(game.map.map_hight):
-                    print(game.map.tmap[i])
+                    print(game.map.territoris_map[i])
                 print("---")
 
     if (game.run_game):

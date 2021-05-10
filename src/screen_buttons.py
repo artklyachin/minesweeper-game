@@ -1,6 +1,6 @@
 
 
-class ScreenButtons:
+class screen_buttons:
 
     def __init__(self):
         pass
