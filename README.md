@@ -1,4 +1,4 @@
-# BigPythonProjectSaper
+# saper-game
 
 Классический сапер, прям как в windows 
 
