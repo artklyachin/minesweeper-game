@@ -1,4 +1,4 @@
-# saper-game
+# minesweeper game
 
 Классический сапер, прям как в windows 
 
